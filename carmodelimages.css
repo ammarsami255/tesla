@@ -1,0 +1,367 @@
+.primary-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 16px; /* Text size */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.primary-btn:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: translateY(-2px); /* Raise button slightly */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.primary-btn:active {
+  background-color: #3e8e41; /* Even darker green when pressed */
+  transform: translateY(1px); /* Button sinks slightly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+.secondary-btn {
+  background-color: #156fd0; /* Green background */
+  color: white; /* White text */
+  font-size: 16px; /* Text size */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.secondary-btn:hover {
+  background-color: #156fd0; /* Slightly darker green on hover */
+  transform: translateY(-2px); /* Raise button slightly */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.secondary-btn:active {
+  background-color: #156fd0; /* Even darker green when pressed */
+  transform: translateY(1px); /* Button sinks slightly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+
+.unselectable {
+    user-select: none; 
+   
+  }
+  
+  *{
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+  }
+  .body {
+     
+      min-height: 100 vh;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .navdiv{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .logo{
+      width:  100px;
+      height: 80px;
+  }
+  
+  
+  .navdiv li{
+      list-style: none;
+      display: inline-block;
+      float: left;
+  }
+  .navdiv li a{
+      position: relative;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 25px;
+  }
+  
+  .navdiv a:hover {
+     
+  color: #ea1538 ;
+  transition: .5s;
+  
+  }
+  a:after{
+  content: "";
+  position: absolute;
+  background-color: #ea1538;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  
+  }
+  
+  a:hover::after {
+  width: 100%;
+  }
+  
+  
+  .back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index:-1 ;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* عشان الصورة تكون في النص */
+    width: 300px; /* حجم الصورة */
+    
+  }
+  
+  .text-image {
+    width: 50%; 
+    filter: invert(1); 
+    transition: filter 0.3s ease-in-out; 
+  }
+  
+  .text-image:hover {
+    filter: invert(0);
+  }
+  
+  .content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+    
+  
+  
+  
+  /*Car Models START*/
+  
+  /*Model Y START*/
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('imgs/tesla-model-s-delantera.jpeg') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Overlay for Dim Effect */
+  .hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
+    z-index: 1;
+  }
+  
+  /* Content Section */
+  .hero-section .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* Buttons */
+  .hero-section .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  /*Model Y END*/
+  
+  /*Model X START*/
+  /* Hero Section */
+  .hero-section1 {
+    position: relative;
+    height: 100vh;
+    background: url('imgs/000000000000.jpg') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+   /* Overlay for Dim Effect */
+   .hero-section1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
+    z-index: 1;
+  }
+  
+  /* Content Section */
+  .hero-section1 .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-section1 h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+  .hero-section1 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* Buttons */
+  .hero-section1 .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  /*Model X END*/
+  
+  /*CYBERTRUCK START*/
+  /* Hero Section */
+  .hero-section2{
+    position: relative;
+    height: 100vh;
+    background: url('imgs/model s.jpg') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Overlay for Dim Effect */
+  .hero-section2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
+    z-index: 1;
+  }
+  
+  /* Content Section */
+  .hero-section2 .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-section2 h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+  .hero-section2 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* Buttons */
+  .hero-section2 .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  /*CYBERTRUCK END*/
+  
+  /*CYBERTRUCK START*/
+  /* Hero Section */
+  .hero-section3{
+    position: relative;
+    height: 100vh;
+    background: url('imgs/CyT.jpg') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Overlay for Dim Effect */
+  .hero-section3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
+    z-index: 1;
+  }
+  
+  /* Content Section */
+  .hero-section3 .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-section3 h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+  .hero-section3 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* Buttons */
+  .hero-section3 .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  /*CYBERTRUCK END*/
+
+  /*Car Models END*/
+  
+  
+  
+  
+  
+  
+  

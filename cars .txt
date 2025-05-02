@@ -1,0 +1,45 @@
+<div class="hero-section">
+    <!-- Background Image -->
+    <div class="overlay"></div>
+    <div class="content">
+      <!-- Title and Text -->
+      <h1>Model Y</h1>
+      <p>From $44,990</p>
+      <!-- Buttons -->
+      <div class="buttons">
+        <button class="primary-btn">Order Now</button>
+        <button class="secondary-btn">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-section1">
+    <!-- Background Image -->
+    <div class="overlay"></div>
+    <div class="content">
+      <!-- Title and Text -->
+      <h1>Model X</h1>
+      <p>From $77,990</p>
+      <!-- Buttons -->
+      <div class="buttons">
+        <button class="primary-btn">Order Now</button>
+        <button class="secondary-btn">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="hero-section2">
+    <!-- Background Image -->
+    <div class="overlay"></div>
+    <div class="content">
+      <!-- Title and Text -->
+      <h1>CYBERTRUCK</h1>
+      <p>From	$60,990</p>
+      <!-- Buttons -->
+      <div class="buttons">
+        <button class="primary-btn">Order Now</button>
+        <button class="secondary-btn">Learn More</button>
+      </div>
+    </div>
+  </div>

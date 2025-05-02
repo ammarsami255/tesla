@@ -1,0 +1,153 @@
+/*Car Models START*/
+
+/*Model Y START*/
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('imgs/model\ Y.jpg') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Overlay for Dim Effect */
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
+  z-index: 1;
+}
+
+/* Content Section */
+.hero-section .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.hero-section .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+/*Model Y END*/
+
+/*Model X START*/
+/* Hero Section */
+.hero-section1 {
+  position: relative;
+  height: 100vh;
+  background: url('imgs/Model-X.png') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+ /* Overlay for Dim Effect */
+ .hero-section1 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
+  z-index: 1;
+}
+
+/* Content Section */
+.hero-section1 .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section1 h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.hero-section1 p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.hero-section1 .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+/*Model X END*/
+
+/*CYBERTRUCK START*/
+/* Hero Section */
+.hero-section2{
+  position: relative;
+  height: 100vh;
+  background: url('imgs/cybertruck.png') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Overlay for Dim Effect */
+.hero-section2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
+  z-index: 1;
+}
+
+/* Content Section */
+.hero-section2 .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section2 h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.hero-section2 p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.hero-section2 .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+/*CYBERTRUCK END*/
+
+/*Car Models END*/

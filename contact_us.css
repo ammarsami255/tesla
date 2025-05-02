@@ -1,0 +1,106 @@
+
+.bg{
+     background-image: url("imgs/B.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; 
+
+}
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .form-container{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("E:/Prj2/imgs/car.jpg") no-repeat center/cover;
+    }
+    .form-container form{
+        width: 670px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        background: rgba(255, 255, 255,0.1);
+        backdrop-filter: blur(30px);
+        flex-wrap: wrap;
+    }
+    .form-container form h1{
+        color: #fff;
+        font-weight: 700;
+        line-height: 2;
+        margin-top: 20px;
+        width: 500px;
+        text-align: center;
+    }
+    .form-container form input{
+        width: 300px;
+        height: 50px;
+        padding-left: 10px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        margin-bottom: 10px;
+        background: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+    }
+    .form-container form input::placeholder{
+        color: #fff;
+    }
+    .form-container form #lastname,
+    .form-container form #mobile{
+        margin-left: 20px;
+    }
+    .form-container form h4{
+        color: #fff;
+        font-weight: 300;
+        width: 600px;
+        margin-top: 20px;
+    }
+    .form-container form textarea{
+        background: none;
+        border: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-weight: 200;
+        font-size: 20px;
+        padding: 10px;
+        outline: none;
+        min-height: 90px;
+        min-width: 620px;
+        max-width: 620px;
+    }
+    .form-container form h4{
+        font-size: 20px;
+    }
+    .form-container form #button{
+        border: none;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 24px;
+        color: black;
+        width: 200px;
+        height: 60px;
+        padding: 0;
+        margin-bottom: 30px;
+        transition: 0.3s;
+    }
+    .form-container form #button:hover{
+        background: #000;
+        color: #fff;
+        transition: .5s ease-in-out;
+    }
+.body {
+
+  background-image: url("C:/Users/SmartOS/Desktop/00/Prj2/imgs/B.png");
+
+}
+

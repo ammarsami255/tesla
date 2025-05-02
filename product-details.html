@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="product.css">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .product-details {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    .product-image {
+      flex: 1;
+    }
+    .product-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .signin-message {
+      margin-top: 10px;
+      color: gray;
+    }
+    .signin-bold {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #3b7bbf;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .description {
+      margin-top: 30px;
+    }
+    #signin-message {
+      font-size: 18px;
+      color: #777;
+      margin: 15px 0;
+      text-align: center;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* تأثير انيميشين */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    #product-price {
+      font-size: 23px;
+      color: #28a745;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .product-details {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="product-details">
+    <div class="product-image">
+      <img id="product-image" src="" alt="Product Image" width="100%">
+    </div>
+
+    <div class="product-info">
+      <h1 id="product-name">Product Name</h1>
+      <p id="product-price">Price</p>
+      <p class="signin-message">Please sign in to your Tesla account to purchase this product.</p>
+      <p class="signin-bold">Sign in to add to cart</p>
+      <button>Sign In</button>
+      <div class="description">
+        <h2>Description</h2>
+        <p id="product-description">Description of the product.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = urlParams.get('product');
+
+    if (product) {
+      const productName = product.replace(/-/g, " ").toUpperCase();
+      document.getElementById("product-name").innerText = productName;
+
+      if (product === "wall-connector") {
+        document.getElementById("product-image").src = "imgs/6r2c062c.png";
+        document.getElementById("product-price").innerText = "$420";
+        document.getElementById("product-description").innerText = "The Wall Connector offers an efficient and convenient home charging solution for Tesla vehicles. With customizable power levels, versatile indoor and outdoor installation, and smart features, it ensures your vehicle is always ready when you are. Designed for reliability and sleek aesthetics, it's the perfect fit for any garage or driveway.";
+      } else if (product === "universal-wall-connector") {
+        document.getElementById("product-image").src = "imgs/6r2c062c.png";
+        document.getElementById("product-price").innerText = "$650";
+        document.getElementById("product-description").innerText = "The Universal Wall Connector brings the future of EV charging into your home. It features an integrated J1772 adapter, making it compatible with almost all electric vehicles on the market. With its lightweight cable, stunning design, and Wi-Fi connectivity for updates, it’s the most versatile charger you can own.";
+      } else if (product === "mobile-connector") {
+        document.getElementById("product-image").src = "imgs/s0kh4wh8.png";
+        document.getElementById("product-price").innerText = "$300";
+        document.getElementById("product-description").innerText = "Charge your Tesla anywhere with the Mobile Connector. Compact and portable, it allows you to plug into common household outlets and charges your vehicle wherever life takes you. Ideal for travelers and those who need flexibility, the Mobile Connector ensures you're never stuck without a charge.";
+      } else if (product === "home-backup-bundle") {
+        document.getElementById("product-image").src = "imgs/d79k12p6.png";
+        document.getElementById("product-price").innerText = "$350";
+        document.getElementById("product-description").innerText = "Prepare your home for unexpected power outages with the Tesla Home Backup Bundle. Featuring the revolutionary Powerwall and an integrated PowerShare system, this bundle ensures your home remains powered during emergencies, keeping your family safe and connected.";
+      } else if (product === "Tesla-Bot-Action-Figure") {
+        document.getElementById("product-image").src = "imgs/l1.png";
+        document.getElementById("product-price").innerText = "$200";
+        document.getElementById("product-description").innerText = "Capture the innovation of Tesla with the Tesla Bot Action Figure. A miniature replica of the futuristic humanoid robot, this collectible stands as a symbol of Tesla's ambition to redefine the future. Perfect for fans and collectors alike.";
+      } else if (product === "On-the-Road-Vessel-P2M") {
+        document.getElementById("product-image").src = "imgs/l2.png";
+        document.getElementById("product-price").innerText = "$200";
+        document.getElementById("product-description").innerText = "Whether you're commuting or embarking on a road trip, the On the Road Vessel P2M is designed to keep your drinks secure and stylish. Featuring Tesla’s signature design philosophy, it offers durability, insulation, and modern elegance.";
+      } else if (product === "Cybertruck-Wind-up-Racer") {
+        document.getElementById("product-image").src = "imgs/l3.png";
+        document.getElementById("product-price").innerText = "$200";
+        document.getElementById("product-description").innerText = "Experience the thrill of Tesla’s boldest vehicle in miniature form. The Cybertruck Wind-up Racer is a fun, futuristic toy that captures the iconic angular design of the real Cybertruck. Perfect for both children and Tesla enthusiasts.";
+      } else if (product === "Levitating-Cybertruck") {
+        document.getElementById("product-image").src = "imgs/l4.png";
+        document.getElementById("product-price").innerText = "$200";
+        document.getElementById("product-description").innerText = "A marvel of engineering and design, the Levitating Cybertruck floats elegantly in mid-air using magnetic levitation technology. This stunning desk piece captures the essence of Tesla’s innovation spirit and adds a touch of futuristic charm to any space.";
+      } else if (product === "Kids-Cybertruck-Headlight-to-Taillight-Tee") {
+        document.getElementById("product-image").src = "imgs/kids1.png";
+        document.getElementById("product-price").innerText = "$650";
+        document.getElementById("product-description").innerText = "Let your kids wear their Tesla pride! This tee features a full-length Cybertruck graphic from headlights to taillights. Comfortable, durable, and stylish — it’s designed for young Tesla fans who dream big.";
+      } else if (product === "Kids-Cybertruck-Reflective-Tee") {
+        document.getElementById("product-image").src = "imgs/kids2.png";
+        document.getElementById("product-price").innerText = "$300";
+        document.getElementById("product-description").innerText = "Shine bright with the Kids Cybertruck Reflective Tee. Made from premium fabric, this tee lights up with reflective Cybertruck designs under direct light, ensuring your child stands out day or night with style and safety.";
+      } else if (product === "Kids-3D-T-Logo-Tee") {
+        document.getElementById("product-image").src = "imgs/kids4.png";
+        document.getElementById("product-price").innerText = "$350";
+        document.getElementById("product-description").innerText = "Sleek and simple, the Kids 3D T Logo Tee is a tribute to the Tesla brand. Featuring a three-dimensional Tesla logo, this shirt is both fashionable and comfortable, making it perfect for any young fan of technology and innovation.";
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+
+.unselectable {
+  user-select: none; 
+ 
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.body {
+   
+    min-height: 100 vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width:  100px;
+    height: 80px;
+}
+
+
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+    float: left;
+}
+.navdiv li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.navdiv a:hover {
+   
+color: #ea1538 ;
+transition: .5s;
+
+}
+a:after{
+content: "";
+position: absolute;
+background-color: #ea1538;
+height: 3px;
+width: 0;
+left: 0;
+bottom: -10px;
+transition: 0.3s;
+
+}
+
+a:hover::after {
+width: 100%;
+}
+
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index:-1 ;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* عشان الصورة تكون في النص */
+  width: 300px; /* حجم الصورة */
+  
+}
+
+.text-image {
+  width: 50%; 
+  filter: invert(1); 
+  transition: filter 0.3s ease-in-out; 
+}
+
+.text-image:hover {
+  filter: invert(0);
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}

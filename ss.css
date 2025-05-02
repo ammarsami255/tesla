@@ -1,0 +1,259 @@
+
+.unselectable {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+  }
+  
+  *{
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+  }
+  .body {
+     
+      min-height: 100 vh;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .navdiv{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .logo{
+      width: 80px;
+      height: 80px;
+  }
+  
+  
+  .navdiv li{
+      list-style: none;
+      display: inline-block;
+      float: left;
+  }
+  .navdiv li a{
+      position: relative;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 25px;
+  }
+  
+  .navdiv a:hover {
+     
+  color: #ea1538 ;
+  transition: .3s;
+  
+  }
+  a:after{
+  content: "";
+  position: absolute;
+  background-color: #ea1538;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  
+  }
+  
+  a:hover::after {
+  width: 100%;
+  }
+  
+  
+  .overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* عشان الصورة تكون في النص */
+    width: 300px; /* حجم الصورة */
+    animation: bounce 2s infinite; /* الأنيميشن */
+  }
+  
+  
+  .text-image {
+    width: 50%; 
+    filter: invert(1); 
+    transition: filter 0.3s ease-in-out; 
+  }
+  
+  .text-image:hover {
+    filter: invert(0);
+  }
+  
+  .content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #010101;
+  }
+    
+  
+  
+  
+  
+
+.header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(imgs/car.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hero{
+    width: 100%;
+}
+
+.hero .row{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.hero .row .left-sec {
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.hero .row .left-sec h2{
+    font-size: 85px;
+    color: #d43242;
+    text-transform: capitalize;
+}
+
+.hero .row .left-sec h2 span{
+    color: #d43242;
+}
+
+.hero .row .left-sec p{
+    margin: 20px 0;
+    color: #000000;
+    line-height: 28px;
+    padding-right: 150px;
+}
+
+.hero .row .left-sec .discover-btn{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 0 25px;
+    border: 3px solid #000000;
+    background-color: #000000;
+}
+
+.hero .row .left-sec .discover-btn a{
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+
+.hero .row .left-sec .discover-btn span{
+    color: #000000;
+    font-size: 45px;
+}
+
+.hero .information{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.hero .information .production{
+    margin-right: 50px;
+    line-height: 2px;
+
+}
+
+.hero .information .production h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.hero .information .production h1{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.hero .information .production p{
+    padding-right: 0;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.hero .right-sec{
+    width: 70%;
+    padding-top: 100px;
+}
+
+.hero .right-sec img{
+    width: 950px;
+    height: 550px;
+    margin: auto;
+    float: right;
+}
+
+.slick-next, .slick-prev {
+    top: 110% !important;
+    z-index: 999;
+}
+
+.slick-prev{
+    position: absolute;
+    left: 950px !important;
+}
+
+.slick-next{
+    position: absolute;
+    right: 178px !important;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 45px !important;
+}
+
+.slick-dots {
+    padding-left: 450px !important;
+    margin-bottom: -50px !important;
+}
+
+.slick-dots li{
+    margin-right: 15px !important;
+}
+
+.slick-dots li.slick-active:after{
+    position: absolute;
+    content: '.';
+    bottom: -15px;
+    left: 6px;
+    opacity: 1;
+    color: red;
+    font-size: 36px;
+}
+
+.navdiv{
+    background-color: rgb(255, 255, 255);
+}
